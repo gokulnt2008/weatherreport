@@ -1,0 +1,95 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+
+        <title>Document</title>
+        <style>
+        body{
+            margin: 0px;
+        }
+        .user-container{
+            width: 100%;
+            background-color: #8e4094;
+            height: 100px;
+        }
+        .user-container h2{
+            color: white;
+            padding: 35px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .user-container img{
+            border-radius:50%;
+            height: 97%;
+            float:right;
+            margin-top:-117px;
+            margin-right: 30px;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-image: linear-gradient(#7194da, #66a3ff, #66ccff);
+            background-size: cover;
+        }
+        .card{
+            margin-left:35px ;
+            display: inline-flex;
+        }
+        .card-img-top{
+            width: 100%;
+            height: 200px;
+        }
+        #weather-form{
+            width: 50%;
+            height: 40px;
+            border-radius: 3px;
+            border:1px solid #66a3ff;
+            background-color: #7194da;
+        }
+        .btn-primary {
+            width: 180px;
+            margin-top: -5px;
+            height: 40px;
+
+        }
+        </style>
+
+   </script>
+    </head>
+    <body>
+        <h2 align="center" class="text-light mb-4">Popular Cities</h2>
+        <div class="card" style="width: 18rem;" id="banglore">
+            
+          </div>
+          <div class="card" style="width: 18rem;" id="new-york">
+            
+          </div>
+          <div class="card" style="width: 18rem;" id="new-jersey">
+
+          </div>
+
+
+          <div class="card" style="width: 18rem;" id="chennai">
+
+          </div>
+          <hr>
+        <div class="weather-container">
+            <h2 align="center" style="color: white;">Which city are you looking for?</h2>
+            <br>
+            <center>
+            <input id="weather-form">
+            <button onclick="callApi()" class="btn btn-primary">Get Weather Report</button>
+        </center>
+        </div>
+        <br>
+        <br>
+        <div id="search-div-container">
+
+        </div>
+        <br>
+    </body>
+</html>
