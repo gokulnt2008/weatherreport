@@ -37,7 +37,7 @@ function callApi() {
                 <b>lon</b>: ${users.coord.lon}
                 `;
             document.getElementById('img-container').innerHTML += `
-                <img src="http://openweathermap.org/img/wn/${users.weather[0].icon}@2x.png" style="float: right;">
+                <img src="https://openweathermap.org/img/wn/${users.weather[0].icon}@2x.png" style="float: right;">
                 
                 `
             console.log(users)
@@ -45,7 +45,7 @@ function callApi() {
     };
 
 
-    xhttp.open("GET", `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=651e614deed92f593561280d0a037d12`, true);
+    xhttp.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=651e614deed92f593561280d0a037d12`, true);
     xhttp.send();
 }
 
@@ -73,7 +73,7 @@ function city1(){
 
 
 
-    xhttp.open("GET", `http://api.openweathermap.org/data/2.5/weather?q=bangalore&appid=651e614deed92f593561280d0a037d12`, true);
+    xhttp.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=bangalore&appid=651e614deed92f593561280d0a037d12`, true);
     xhttp.send();
 }
 
@@ -100,7 +100,7 @@ function city2(){
 
 
 
-    xhttp.open("GET", `http://api.openweathermap.org/data/2.5/weather?q=new%20york&appid=651e614deed92f593561280d0a037d12`, true);
+    xhttp.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=new%20york&appid=651e614deed92f593561280d0a037d12`, true);
     xhttp.send();
 }
 
@@ -127,7 +127,7 @@ function city3(){
 
 
 
-    xhttp.open("GET", `http://api.openweathermap.org/data/2.5/weather?q=new%20york&appid=651e614deed92f593561280d0a037d12`, true);
+    xhttp.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=new%20york&appid=651e614deed92f593561280d0a037d12`, true);
     xhttp.send();
 }
 
@@ -155,7 +155,7 @@ function city4(){
 
 
 
-    xhttp.open("GET", `http://api.openweathermap.org/data/2.5/weather?q=new%20york&appid=651e614deed92f593561280d0a037d12`, true);
+    xhttp.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=new%20york&appid=651e614deed92f593561280d0a037d12`, true);
     xhttp.send();
 }
 
